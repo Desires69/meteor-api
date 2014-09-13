@@ -1,8 +1,10 @@
-# Meteor snippets for Atom editor
+Meteor snippets for Atom editor
+=======================================
 
 Basic snippets to make meteor development faster in Atom.  Isomorphic javascript for the win!  Now supporting Server, Client, Database, Mobile Devices, Testing, and Editor!  
 
-## Examples
+---------------------------------------
+#### Examples
 
 **mtp**
 
