@@ -3,10 +3,11 @@ Meteor snippets for Atom editor
 
 Basic snippets to make meteor development faster in Atom.  Isomorphic javascript for the win!  Now supporting Server, Client, Database, Mobile Devices, Testing, and Editor!  
 
----------------------------------------
-#### Examples
 
-**mtp**
+---------------------------------------
+#### Document Object Model Snippets
+
+**template**
 
 ```html
 <template name="name">
@@ -14,7 +15,7 @@ Basic snippets to make meteor development faster in Atom.  Isomorphic javascript
 </template>
 ```
 
-**mea**
+**#each**
 
 ```handlebars
 {{#each collection}}
@@ -22,7 +23,7 @@ Basic snippets to make meteor development faster in Atom.  Isomorphic javascript
 {{/each}}
 ```
 
-**mif**
+**#if**
 
 ```handlebars
 {{#if statement}}
@@ -30,7 +31,7 @@ Basic snippets to make meteor development faster in Atom.  Isomorphic javascript
 {{/if}}
 ```
 
-**mife**
+**#ife**
 
 ```handlebars
 {{#if statement}}
@@ -40,7 +41,18 @@ Basic snippets to make meteor development faster in Atom.  Isomorphic javascript
 {{/if}}
 ```
 
-**mpub**
+
+---------------------------------------
+#### Javascript Controller Snippets
+
+
+**log**
+
+```javascript
+console.log("foo");
+```
+
+**publish**
 
 ```javascript
 Meteor.publish("name", function(argument){
@@ -48,13 +60,13 @@ Meteor.publish("name", function(argument){
 });
 ```
 
-**msub**
+**subscribe**
 
 ```javascript
 Meteor.subscribe("name", argument);
 ```
 
-**mren**
+**rendered**
 
 ```javascript
 Template.name.rendered = function(){
@@ -62,7 +74,7 @@ Template.name.rendered = function(){
 }
 ```
 
-**mcre**
+**created**
 
 ```javascript
 Template.name.created = function(){
@@ -70,21 +82,45 @@ Template.name.created = function(){
 }
 ```
 
-**mhel**
+**helpers**
 
 ```javascript
 Template.name.helpers({
-  helper: function(){
+  rendered: function(){
     ...
   }
 });
 ```
 
-**mevn**
+**events**
 
 ```javascript
 Template.name.events({
-  'event': function(e, t){
+  'click #foo': function(e, t){
+    ...
+  }
+});
+```
+
+**Template**
+
+```javascript
+Router.map(function(){
+  this.route("nameRoute", {
+    path: "/route",
+    template: "name",
+    onBeforeAction: function () {
+      setPageTitle("Some Page");
+    }
+  });
+});
+Template.name.helpers({
+  rendered: function(){
+    ...
+  }
+});
+Template.name.events({
+  'click #foo': function(e, t){
     ...
   }
 });
