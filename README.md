@@ -1,13 +1,13 @@
 Meteor API Snippets for the Atom Editor
 =======================================
 
-Bring Isomorphic javascript to the Editor with Meteor API snippets!  
+Bring Isomorphic javascript to the editor with Meteor API snippets!  
 
 
 ---------------------------------------
 #### Installation  
 
-Go to Atom > Open Your Snippets, and copy the contents of ``snippets/meteor.api.cson`` into the file.  Once we get the API completely covered, we'll publish through the Atom package system.  
+Go to **Atom > Open Your Snippets**, and copy the contents of ``snippets/meteor.api.cson`` into the file.  Once we get the API completely covered, we'll publish through the Atom package system.  
 
 ---------------------------------------
 #### Contributing  
