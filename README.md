@@ -1,127 +1,162 @@
-Extended Meteor Snippets for Atom 
+Meteor API Snippets for the Atom Editor
 =======================================
 
-Basic snippets to make meteor development faster in Atom.  Isomorphic javascript for the win!  Now supporting Server, Client, Database, Mobile Devices, Testing, and Editor!  
+Bring Isomorphic javascript to the Editor with Meteor API snippets!  
 
 
 ---------------------------------------
-#### Document Object Model Snippets
+#### Installation  
 
-**template**
+Go to Atom > Open Your Snippets, and copy the contents of ``snippets/meteor.api.cson`` into the file.  Once we get the API completely covered, we'll publish through the Atom package system.  
 
-```html
-<template name="name">
-  ...
-</template>
-```
+---------------------------------------
+#### Contributing  
 
-**#each**
+Pull requests encouraged!  If you're new to Meteor and want to help contribute, while learning the API, here's a great little project to help you get up to speed.  Simply follow the examples in ``snippets/meteor.api.cson`` and help create a snippet for each command in the following list using the documentation from [docs.meteor.com](http://docs.meteor.com/#meteortestpackages).  When you're done, uncomment the line item.  
 
-```handlebars
-{{#each collection}}
-  ...
-{{/each}}
-```
 
-**#if**
-
-```handlebars
-{{#if statement}}
-  ...
-{{/if}}
-```
-
-**#ife**
-
-```handlebars
-{{#if statement}}
-  ...
-{{else}}
-  ...
-{{/if}}
-```
 
 
 ---------------------------------------
-#### Javascript Controller Snippets
+#### API
+
+````js
+//isClient
+//isServer
+//startup
+//absoluteUrl
+//settings
+//release
+````
+
+#### Publish and Subscribe
+````js
+publish
+subscribe
+````
+
+#### Methods
+````js
+//methods
+//error
+//call
+//apply
+````
+
+#### Connections
+````js
+//status
+//reconnect
+//disconnect
+//connect
+````
+
+#### Collections
+````js
+//find
+//findOne
+//insert
+update
+//upsert
+//remove
+//allow
+//deny
+````
+
+#### Session
+````js
+//set
+//get
+//equals
+//default
+````
+
+#### Templates
+````js
+Template
+events
+helpers
+rendered
+created
+//destoryed
+//findAll
+//$
+//find
+//firstNode
+//lastNode
+//data
+//autorun
+//view
+//registerHelper
+//instance
+//currentData
+//parentData
+//body
+````
+
+#### Match
+````js
+//check
+//test
+````
+
+#### Timers
+````js
+//setTimeout
+//setInterval
+//clearTimeout
+//clearInterval
+````
+
+#### Tracker
+````js
+//autorun
+//flush
+//nonreactive
+//active
+//currentComputation
+//onInvalidate
+//afterFlush
+//Computation
+//Dependency
+````
 
 
-**log**
+#### EJSON
+````js
+//parse
+//stringify
+//equals
+//clone
+//tojson
+//type
+````
 
-```javascript
-console.log("foo");
-```
+#### HTTP
+````js
+//call
+//get
+//post
+//put
+//del
+````
 
-**publish**
+#### Email
+````js
+//send
+````
 
-```javascript
-Meteor.publish("name", function(argument){
-  ...
-});
-```
+#### Assets
+````js
+//getText
+//getBinary
+````
 
-**subscribe**
-
-```javascript
-Meteor.subscribe("name", argument);
-```
-
-**rendered**
-
-```javascript
-Template.name.rendered = function(){
-  ...
-}
-```
-
-**created**
-
-```javascript
-Template.name.created = function(){
-  ...
-}
-```
-
-**helpers**
-
-```javascript
-Template.name.helpers({
-  rendered: function(){
-    ...
-  }
-});
-```
-
-**events**
-
-```javascript
-Template.name.events({
-  'click #foo': function(e, t){
-    ...
-  }
-});
-```
-
-**Template**
-
-```javascript
-Router.map(function(){
-  this.route("nameRoute", {
-    path: "/route",
-    template: "name",
-    onBeforeAction: function () {
-      setPageTitle("Some Page");
-    }
-  });
-});
-Template.name.helpers({
-  rendered: function(){
-    ...
-  }
-});
-Template.name.events({
-  'click #foo': function(e, t){
-    ...
-  }
-});
-```
+#### Router
+````js
+Router
+route
+UpsertRoute
+//ListRoute
+//RecordRoute
+````
