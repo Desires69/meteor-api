@@ -74,7 +74,27 @@
     'body': 'UI.registerHelper("${1:helperName}", function(${2:argument}){\n\t${3}\n});',
 
 #===================================================
-# Meteor DDP Snippets
+# Meteor Core API
+
+  'Meteor.isClient':
+    'prefix': 'isclient'
+    'body': 'if(Meteor.isClient){\n\t${1:}\n}',
+
+  'Meteor.isServer':
+    'prefix': 'isserver'
+    'body': 'if(Meteor.isServer){\n\t${1:}\n}',
+
+  'Meteor.startup':
+    'prefix': 'startup'
+    'body': 'Meteor.startup(function(){\n\t${1:}\n});',
+
+  'Meteor.absoluteUrl':
+    'prefix': 'absolute'
+    'body': 'Meteor.absoluteUrl("${1:}");',
+
+
+#===================================================
+# Publish & Subscribe
 
   'Meteor Publish':
     'prefix': 'publish'
@@ -83,6 +103,10 @@
   'Meteor Subscribe':
     'prefix': 'subscribe'
     'body': 'Meteor.subscribe("${1:name}", ${2:argument});',
+
+
+#===================================================
+# Methods
 
   'Collection Update':
     'prefix': 'update'
