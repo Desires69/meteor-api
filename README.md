@@ -21,12 +21,10 @@ Pull requests encouraged!  If you're new to Meteor and want to help contribute, 
 #### API
 
 ````js
-//isClient
-//isServer
-//startup
-//absoluteUrl
-//settings
-//release
+isClient
+isServer
+startup
+absoluteUrl
 ````
 
 #### Publish and Subscribe
