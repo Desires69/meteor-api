@@ -18,7 +18,7 @@ Pull requests encouraged!  If you're new to Meteor and want to help contribute, 
 
 
 ---------------------------------------
-#### API
+#### Core
 
 ````js
 isClient
