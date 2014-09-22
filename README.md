@@ -21,8 +21,8 @@ Pull requests encouraged!  If you're new to Meteor and want to help contribute, 
 #### Core
 
 ````js
-isclient
-isserver
+isClient
+isServer
 startup
 absolute
 ````
@@ -42,31 +42,66 @@ call
 
 #### Connections
 ````js
-//status
-//reconnect
-//disconnect
-//connect
+status
+reconnect
+disconnect
+onConnection
 ````
 
 #### Collections
 ````js
-//find
-//findOne
-//insert
+Collection
+find
+findOne
+insert
 update
-//upsert
-//remove
-//allow
-//deny
+upsert
+remove
+allow
+deny
+
 ````
 
 #### Session
 ````js
-//set
-//get
-//equals
-//default
+set
+get
+equals
+setDefault
 ````
+
+
+#### Accounts
+````js
+//user
+//userId
+//users
+//loggingIn
+//logout
+//loutOtherClients
+//loginWithPassword
+
+//config
+//validateNewUser
+//onCreateUser
+//validateLoginAttempt
+//onLogin
+//onLoginFailure
+````
+#### Accounts
+````js
+//createUser
+//changePassword
+//forgotPassword
+//resetPassword
+//setPassword
+//verifyEmail
+//sendResetPassword
+//sendEnrollmentEmail
+//sendVerificationEmail
+//emailTemplates
+````
+
 
 #### Templates
 ````js
@@ -75,78 +110,78 @@ events
 helpers
 rendered
 created
-//destoryed
-//findAll
-//$
-//find
-//firstNode
-//lastNode
-//data
-//autorun
-//view
-//registerHelper
-//instance
-//currentData
-//parentData
-//body
+destoyed
+registerHelper
 ````
+
+#### Blaze  
+````js
+render  
+renderWithData
+remove
+getData
+toHTML
+toHTMLWithData
+isTemplate
+````
+
 
 #### Match
 ````js
-//check
-//test
+check
+test
 ````
 
 #### Timers
 ````js
-//setTimeout
-//setInterval
-//clearTimeout
-//clearInterval
+setTimeout
+setInterval
+clearTimeout
+clearInterval
 ````
 
 #### Tracker
 ````js
-//autorun
-//flush
-//nonreactive
-//active
-//currentComputation
-//onInvalidate
-//afterFlush
-//Computation
-//Dependency
+autorun
+flush
+nonreactive
+active
+currentComputation
+onInvalidate
+afterFlush
 ````
 
 
 #### EJSON
 ````js
-//parse
-//stringify
-//equals
-//clone
-//tojson
-//type
+parse
+stringify
+clone
+toJSON
+fromJSON
+isBinary
+//equals - namespace conflict with Session.equals
+//addType
 ````
 
 #### HTTP
 ````js
-//call
-//get
-//post
-//put
-//del
+call
+get
+post
+put
+del
 ````
 
 #### Email
 ````js
-//send
+Email
 ````
 
 #### Assets
 ````js
-//getText
-//getBinary
+getText
+getBinary
 ````
 
 #### Router
