@@ -75,6 +75,10 @@
     'prefix': 'isServer'
     'body': 'if(Meteor.isServer){\n\t${1:}\n}',
 
+  'Meteor.isCordova':
+    'prefix': 'isCordova'
+    'body': 'if(Meteor.isCordova){\n\t${1:}\n}',
+
   'Meteor.startup':
     'prefix': 'startup'
     'body': 'Meteor.startup(function(){\n\t${1:}\n});',
