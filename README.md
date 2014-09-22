@@ -32,6 +32,8 @@ atom helloworld.js
 ---------------------------------------
 #### Recommended Packages  
 
+If you want a complete javascript IDE experience with, we recommend the following packages to run with Meteor API Snippets. 
+
 ````sh
 Atom Lint
 Atom Beutify
