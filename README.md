@@ -35,9 +35,9 @@ subscribe
 
 #### Methods
 ````js
-//methods
-//error
-//call
+methods
+error
+call
 //apply
 ````
 
