@@ -21,10 +21,10 @@ Pull requests encouraged!  If you're new to Meteor and want to help contribute, 
 #### Core
 
 ````js
-isClient
-isServer
+isclient
+isserver
 startup
-absoluteUrl
+absolute
 ````
 
 #### Publish and Subscribe
@@ -38,7 +38,6 @@ subscribe
 methods
 error
 call
-//apply
 ````
 
 #### Connections
