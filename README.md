@@ -73,33 +73,33 @@ setDefault
 
 #### Accounts
 ````js
-//user
-//userId
-//users
-//loggingIn
-//logout
-//loutOtherClients
-//loginWithPassword
+user
+userId
+users
+loggingIn
+logout
+loutOtherClients
+loginWithPassword
 
-//config
-//validateNewUser
-//onCreateUser
+
+Accounts
+validateNewUser
+onCreateUser
 //validateLoginAttempt
-//onLogin
-//onLoginFailure
+onLogin
+onLoginFailure
 ````
 #### Accounts
 ````js
-//createUser
-//changePassword
-//forgotPassword
-//resetPassword
-//setPassword
-//verifyEmail
-//sendResetPassword
-//sendEnrollmentEmail
-//sendVerificationEmail
-//emailTemplates
+createUser
+changePassword
+forgotPassword
+resetPassword
+setPassword
+verifyEmail
+sendResetPassword
+sendEnrollmentEmail
+sendVerificationEmail
 ````
 
 
