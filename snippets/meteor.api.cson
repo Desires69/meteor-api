@@ -84,12 +84,17 @@
     'prefix': 'subscribe'
     'body': 'Meteor.subscribe("${1:name}", ${2:argument});',
 
-#===================================================
-# Collection
-
   'Collection Update':
     'prefix': 'update'
     'body': '${1:Collection}.update({_id:${2:idSelector}}, {$set:{\n\t${3}\n}});',
+
+  'Meteor Methods':
+    'prefix': 'methods'
+    'body': 'Meteor.methods({
+      \n\t${1:methodName}:function(){
+      \n\t\t${2}
+      \n\t}
+      \n});',
 
 #===================================================
 # Template Snippets
@@ -214,6 +219,28 @@
     ',
 
 
+#===================================================
+# Nightwatch
+
+  'verify.elementPresent':
+    'prefix': 'vep'
+    'body': '.verify.elementPresent("#${1}"),${2}',
+
+  'verify.elementNotPresent':
+    'prefix': 'venp'
+    'body': '.verify.elementNotPresent("#${1}"),${2}',
+
+  'waitForElementVisible':
+    'prefix': 'wfev'
+    'body': '.waitForElementVisible("#${1}", ${2}),${3}',
+
+  'click':
+    'prefix': 'click'
+    'body': '.click("#${1}").pause(${2}),${3}',
+
+  'attributeEquals':
+    'prefix': 'ae'
+    'body': '.verify.attributeEquals("#${1}", "value", "${2}"),${3}',
 
 
 
