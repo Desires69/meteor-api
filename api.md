@@ -1,8 +1,4 @@
-Meteor API Coverage
 
-The following are the Meteor API that is currently covered.
-
----------------------------------------
 #### Core
 
 ````js
