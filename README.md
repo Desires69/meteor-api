@@ -24,8 +24,23 @@ atom helloworld.js
 ````
 
 ---------------------------------------
+#### Meteor API Coverage
+
+[List of Covered Meteor API Syntax](https://github.com/awatson1978/meteor-api-for-atom-editor/blob/master/api.md)  
+
+
+---------------------------------------
 #### Recommended Packages  
 
 ````sh
 Atom Lint
+Atom Beutify
+Atom Jshint
+Atom Prettify
+Autocomplete
+Bracket Matcher
+Filetype Color
+Grammar Selector
+Snippets
+Wrap Guide
 ````
