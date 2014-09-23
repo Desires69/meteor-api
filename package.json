@@ -1,7 +1,7 @@
 {
   "name": "meteor-snippets",
   "main": "./lib/meteor-snippets",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Meteor API with tab completion and syntax highlighting.",
   "activationEvents": [
     "meteor-api:toggle"
