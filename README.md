@@ -51,3 +51,4 @@ Wrap Guide
 #### Contributing / Next Steps
 
 [Custom Syntax Highlighting](http://blog.gaku.net/create-a-custom-syntax-highlighting-with-atom-editor/)  
+[Javascript Grammar](https://github.com/atom/language-javascript/blob/master/grammars/javascript.cson)  
