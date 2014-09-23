@@ -1,4 +1,4 @@
-Meteor API Snippets for the Atom Editor
+Meteor API for the Atom Editor
 =======================================
 
 Bring Isomorphic javascript to the editor with Meteor API snippets!  
