@@ -1,0 +1,9 @@
+'scopeName':'source.meteor'
+'name':'Javascript (Meteor)'
+'fileTypes': ['js']
+'patterns': [
+  {
+    'match': 'Meteor'
+    'name': 'api.meteor.core'
+  }
+]
