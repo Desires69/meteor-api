@@ -46,3 +46,8 @@ Grammar Selector
 Snippets
 Wrap Guide
 ````
+
+---------------------------------------
+#### Contributing / Next Steps
+
+[Custom Syntax Highlighting](http://blog.gaku.net/create-a-custom-syntax-highlighting-with-atom-editor/)  
